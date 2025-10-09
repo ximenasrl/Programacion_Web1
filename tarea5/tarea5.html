@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emili Ximena Mejia Merida">
+    <title>Tarea 5: Listas y formularios</title>
+</head>
+<body>
+    <h1>Listas y formularios</h1>
+    <h2>Listas</h2>
+    <!--Listas Desordenadas (aparece una viñeta por elemento)-->
+    <ul>
+        <li>Leche</li>
+        <li>Huevos</li>
+        <li>Carne</li>
+        <li>Pollo</li>
+    </ul>
+    
+    <!--Listas Ordenadas (numeradas)-->
+    <!--Type cambia si es número, letra etc pero se suele modificar esto en CSS-->
+    <!--Start modifica el orden de la lista-->
+    <ol type="I" start="2">
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+        <li>Quinto </li>
+    </ol>
+
+    <!--Lista de definiciones-->
+    <!--dt se utiliza para los términos y dd se utliza para las definicones-->
+    <dl>
+        <dt>HTTML</dt>
+        <dd>Lenguaje de marcado de hipertexto</dd>
+        <dt>CSS</dt>
+        <dd>Hoja de estilos de cascada</dd>
+        <dt>JS</dt>
+        <dd>Java script</dd>
+    </dl>
+    <hr>
+
+    <!--Listas anidadas (lista dentro de otra lista)-->
+    <p>Desarrollo Web</p>
+    <ul>
+        <li>Frontend
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </li>
+        <li>Backend
+            <ol>
+                <li>NodeJS</li>
+                <li>MySQL</li>
+                <li>Debian</li>
+            </ol>
+        </li>
+    </ul>
+
+    <hr>
+    <
+    <p>Formulario de inicio de sesión</p>
+    <form action="/inicio_sesion" method="post">
+        <label for="username">Nombre de usuario</label>
+      
+        <input type="text" id="username" name="username" placeholder="Ingrese su nombre de usuario" required>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
+        <!--Submit envia los datos-->
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!--Formulario con campo de entrada de varias líneas-->
+    <form action="validación.php" method="post">
+        <label for="name">Nombre del usuario</label>
+        <input type="text" name="name" id="name" required placeholder="Introduce tu nombre">
+        <br>
+        <label for="opinion">Comentarios:</label>
+        <textarea name="opinion" id="opinion" rows="4" cols="40" placeholder="Tu opinión es importante"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!--Formularios con listas desplegables de opciones-->
+    <h3>Formularios con listas desplegables</h3>
+    <form action="/sleccion_bebidas_posstres" method="post">
+        <label for="bebidas">Bebidas:</label>
+        <select name="bebidas" id="bebidas">
+            <option value="" disabled selected hidden>Selecciona una opción</option>
+            <!--disable la desabilita, selected hace que aparezca por default y hidden la oculta en las opciones a seleccionar-->
+            <option value="limonada">Limonada</option>
+            <option value="agua">Agua</option>
+            <option value="refresco">Refresco</option>
+            <option value="malteada">Malteada</option>
+            <option value="frappe">Frappe</option>
+        </select>  
+        <br>  
+        <label for="postres">Postres:</label>
+        <select name="postres" id="postres">
+            <option value="helado">Helado</option>
+            <option value="pastel">Pastel</option>
+            <option value="chocolate">Chocolate</option>
+        </select> 
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!--Formularios con distintos tampos de datos-->
+    <h3>Formularios complejos con distintos campos de datos</h3>
+    <form action="/datos_usuario" method="post">
+        <!--fieldset permite separar las secciones de formulario-->
+        <fieldset>
+            <!--legend es como la leyenda de la sección que estamos trabajando-->
+            <legend>Nombre completo:</legend>
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="ap_paterno">Apellido paterno:</label>
+            <input type="text" name="ap_paterno" id="ap_paterno"  required>
+            <br>
+            <label for="ap_materno">Apellido materno</label>
+            <input type="text" name="ap_materno" id="ap_materno"  required>
+        </fieldset>
+        <fieldset>
+            <legend>Otros datos</legend>
+            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" placeholder="Ingrese su edad" required>
+            <br>
+            <label for="num_cuenta">Número de cuenta:</label>
+            <input type="text" name="num_cuenta" id="num_cuenta" placeholder=" Ingresa tu numero de cuenta de la UNAM" required minlength="8" maxlength="9">
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" required>
+        </fieldset>
+        <fieldset>
+            <legend>Dirección</legend>
+            <label for="calle">Calle:</label>
+            <!--Value aparece como default y no se quita al escribirb, placeholder se quita si escribimos-->
+            <input type="text" id="calle" name="calle" value="Emiliano Zapata" required>
+            <br>
+            <label for="num_casa">Número de su casa</label>
+            <input type="number" name="num_casa" id="num_casa" required placeholder="Ingresa el número de tu casa">
+            <br>
+            <label for="colonia">Colonia:</label>
+            <input type="text" id="colonia" name="colonia" required>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
