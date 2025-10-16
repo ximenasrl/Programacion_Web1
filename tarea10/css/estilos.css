@@ -1,0 +1,49 @@
+#encabezado{
+    color: white;
+    background-color: black;
+    height: 80px;
+    /*El relleno es el espacio entre el contenido de un elemento y su borde*/
+    /*Se aplican las propiedades en sentido horario: top,right, bottom y left*/
+    padding: 10px 20px 13px 20px;
+    /*Si solo ponemos dos propiedades se aplican a arriba y lado.
+    si ponemops 3 propiedades la primera es top, la segunda es rigth(y left) y la tercera es boom */
+    margin-bottom: 15px;
+    margin: 10px 30px 50px 70px;
+
+    /*El borde es el contorno visual alrededor de nuestro rellenop y contenido de un elemento
+    Valores posibles para border-style:border:
+    (solid, dotted,dashed, double,groove ridge, inset, outset, hidden y none)
+
+    */
+    border: 15px outset rgb(0, 120, 54) ;
+    border-top-style: outset;
+    border-radius: 50%;
+    /*Se puede utilizar para bordes de sombra alrededor del un borde de un elemento, se deben especificar 
+    los valores para el desplazamiento horizontal,desplazamiento,vertical,radio de desenfoque,radio de propagacion y color*/
+    box-shadow: -5px 5px 10px rgb(45, 255, 146) ;
+    /*border box se utiliza para que rellenos,margenes y bordes no agregen espacio
+    extra a lo que se declaro desde nuestro contenedor */
+
+   /* box-sizing: border-box;*/
+}
+
+.introduccion{
+    color: rgb(163, 115, 24);
+    background-color: rgb(46, 154, 150);
+    padding: 15px;
+    margin-bottom: 10px;
+
+    border: 15px dotted rgb(31, 76, 188) ;
+}
+.introduccion p{
+    border: 5px double rgb(245, 149, 181);
+    height: 100px;
+    width: 500px;
+}
+.introduccion span{
+    border: 5px solid rgb(212, 15, 81);
+    height: 100px;
+    width: 500px;
+    padding:  10px;
+    box-sizing: border-box;
+}

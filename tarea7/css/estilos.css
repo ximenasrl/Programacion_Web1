@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(95, 122, 143);
+}
+article{
+    background-color: rgb(57, 236, 141);
+}
+/*Las clases se utilizan cuando hay que reutilizar estilos que se repiten a lo largo de la página.
+Los identificadores se utilizan cuando se quiere un estilo especifico que no se va a repetir en toda la página (a elementos o secciones que son únicos en nuestra página)
+Se ocupan para navegar a secciones en nuestra misma página*/
+
+
+.estilos-internos{
+    background-color: cornflowerblue;
+}
+
+#encabezado{
+    color:rgb(97, 14, 160)
+}
