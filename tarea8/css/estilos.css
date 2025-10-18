@@ -1,0 +1,70 @@
+/*
+    Modelos de color
+    -RGB
+    -RGBA
+    -Hexadecimal
+    -HSL
+*/
+
+.rgb{
+    color:rgb(32, 83, 38);
+    background-color: rgb(147, 255, 156);
+
+}
+
+.rgba{
+    color:rgb(55, 35, 35);
+    background-color: rgb(255, 105, 105);
+}
+
+.hex{
+    color: #1532ff;
+    background-color: #e40df7;
+}
+
+.hsl{
+    color: hsl(188, 68%, 35%);
+    background-color: hsl(222, 100%, 74%);
+}
+
+/*Colores nultinavegador*/
+
+.lista--colores{
+    background-color: purple;
+}
+
+.black{
+    color: black;
+}
+.white{
+    color: white;
+}
+.salmon{
+    color: salmon;
+}
+.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}
+
+/*
+    Otras propiedades de colores:
+    -border
+    -background-image()
+*/
+.borde{
+    /*border-style: solid;
+   border-color: aqua;
+   border-width: 10px;*/
+   border:5px solid rgba(126, 9, 164, 0.405);
+}
+
+.lineal{
+    background-image: linear-gradient(to top, blue, red);
+}
+
+.radial{
+    background-image: radial-gradient(circle,green, forestgreen)
+}
