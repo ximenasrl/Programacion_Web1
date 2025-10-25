@@ -1,0 +1,44 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+     margin: 0;
+     padding: 0;
+     font-family: Arial, Helvetica, Sans-serif;
+     background-image: linear-gradient (to bottom, orange, yellow);
+     background-size: contain;
+     background-repeat: no-repeat;
+     color: white;
+}
+
+#encabezado{
+    border: 0.2em solid palevioletred;
+    background-color:plum;
+    color: azure;
+}
+
+.contenedor-logo{
+    width: 15%; /*va a utilizar un 15% */
+    height: 10em;
+    border:0.3em dotted rgb(149, 53, 53);
+    border-radius: 50%;
+
+}
+
+.contenedor-logo img{
+    width: 5em;
+    height: 5em;
+    border:4em;
+    object-fit: fill;
+    object-position: top right;
+    border-radius: 50%;
+}
+
+.elementos-posicionados{
+    border: 0.5em solid purple;
+    padding: 0.3em;
+}
+.contenedor-imagenes{
+    
+}
