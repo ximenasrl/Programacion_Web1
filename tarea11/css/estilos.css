@@ -1,0 +1,83 @@
+/*Selector HTML*/
+html{
+    font-size: 62.5%; /*10px*/
+}
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+   padding: 0;
+   color: rgb(99, 164, 222);
+   background-image: linear-gradient(to top, rgb(117, 70, 146), rgb(76, 36, 94));
+}
+#encabezado{
+   border:2px solid rgb(26, 39, 112);
+   text-align: center;
+   /*Va a valer a uno de nuestro elemento raiz (o sea en este caso 1 rem =10 px, dos rem son 20 */
+   font-size: 2rem;
+}
+/*Orden para los estilos de los estados en los enlaces (LVFHA)
+Una pseudoclase nos permtite aplicar estilos hasta que el usuario haga algo*/
+a:link{
+    color: rgb(53, 182, 36);
+}
+a:visited{
+    color:rgb(189, 67, 191);
+}
+
+a:focus{
+    color: rgb(86, 21, 136);
+    background-color: black;
+    border: 1px solid rgb(175, 105, 105);
+}
+
+a:hover{
+    color: rgb(214, 255, 80);
+    background-color: rgba(165, 42, 69, 0.342);
+    border: 0.2rem solid brown;
+}
+
+a:active{
+    color:rgb(31, 202, 193);
+    background-color: white;
+    text-decoration: none;
+
+
+}
+
+#encabezado h1{
+    font-size: 2em; /*2em es como rem pero con el contenedor padre*/
+    background-color: black;
+    
+}
+
+.enlaces{
+    border: 0.5rem dashed rgb(0, 13, 128);
+    font-size: 1.5rem;
+}
+
+.estados-enlaces h2{
+    font-size: 2em;
+    text-align: center;
+    
+}
+
+.estados-enlaces ul{
+    border: 0.2rem solid rgb(255, 59, 137);
+    padding-left: 0;
+}
+
+.estados-enlaces ul li{
+    border: 0.1em solid rgb(254, 20, 20);
+    /*list-styletype(disc, decimal, circle, squeare, lower-roman, lower-alpha, upper-alpha, none )*/
+    list-style-type: square;
+    color: rgb(11, 99, 117);
+    /*list-style-image: url('https://edube.org/uploads/media/default/0001/04/odg_icon_regular.png')*/
+    
+     list-style-image: url('https://edube.org/uploads/media/default/0001/04/odg_icon_regular.png');
+
+    /*list-style-position: (inside,outside)*/
+    list-style-position: inside;
+    margin:  0.4rem;
+    padding: 0.3rem;
+    line-height: 1.5;
+}
